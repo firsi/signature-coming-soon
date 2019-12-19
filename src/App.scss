@@ -5,6 +5,12 @@
     --very-dark-grey: #515050;
 }
 
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 header{
     padding: 1em 5%;
     display: flex;
@@ -12,7 +18,7 @@ header{
 }
 
 main {
-    padding: 5%;
+    padding: 4% 5% 0 5%;
     height: 65vh;
     display: flex;
     position: relative;
@@ -34,6 +40,7 @@ main {
             font-weight: 900;
             margin-bottom: 0.2em;
             font-size: 2.8em;
+            color: #fff;
         }
         p{
             margin: 0;
@@ -60,12 +67,11 @@ main {
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     width:100%;
     display: flex;
     justify-content: flex-end;
-    
+   
     .socials{
         display: none;
     }
@@ -80,7 +86,6 @@ footer{
             color: var(--very-dark-grey);
             transition: .3s;
             &:hover{
-                // color: lighten(#590101, 10%);
                 letter-spacing: 2px;
             }
         }
@@ -115,6 +120,10 @@ footer{
         .right-container{
             display: none;
         }
+
+        .coming-soon{
+            display: none;
+        }
     }
 
     footer{
@@ -124,8 +133,6 @@ footer{
         .login{
             display: none;
         }
-        position: absolute;
-        bottom: 0;
         width:100%;
         display: flex;
         justify-content: center;

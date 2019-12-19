@@ -10,6 +10,27 @@
         a{
             color: #fff;
             text-decoration: none;
+
+            &:hover{
+                color: lighten(#590101, 10%);
+            }
         }
     }
+
+    .number{
+        background-color: #070707;
+        color: var(--light-grey);
+        width: max-content;
+        padding: 0.5em;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+        transition: 0.3s ease-in-out;
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+.number-active{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }

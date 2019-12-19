@@ -4,8 +4,8 @@ import './button.css';
 export const Button = ({title}) => {
 
     return (
-        <button type="button">
+        <a className="contact" href="mailto:sales@signatureinc.co">
             {title}
-        </button>
+        </a>
     )
 }

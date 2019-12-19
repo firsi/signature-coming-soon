@@ -37,8 +37,7 @@ li span::after{
 li:nth-child(4) span::after{
     content: '';
 }
-  
-
+ 
 @media screen and (min-width: 768px){
     li{
         font-size: 0.8em;
@@ -66,5 +65,19 @@ li:nth-child(4) span::after{
 
     li span::after{
         right: -15px;
+    }
+}
+ 
+
+
+@media screen and (max-width: 768px){
+    li {
+        font-size: 0.65em;
+        padding: 1em;
+      }
+      
+    
+    li span {
+        font-size: 4.5em;
     }
 }

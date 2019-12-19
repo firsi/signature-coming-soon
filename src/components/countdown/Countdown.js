@@ -16,13 +16,17 @@ export const Countdown = () => {
 
     useEffect(() => {
     
-        setInterval(function() {
+       let x =  setInterval(function() {
             let now = new Date().getTime();
             let distance = countDown - now;
             setDay(Math.floor(distance / (day)));
             setHour(Math.floor((distance % (day)) / (hour)));
             setMinute(Math.floor((distance % (hour)) / (minute)));
             setSecond(Math.floor((distance % (minute)) / second));
+
+            if (distance < 0) {
+                clearInterval(x);
+              }
       
           }, second)
 

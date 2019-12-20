@@ -188,3 +188,9 @@ footer{
     
     }
 }
+
+@media (orientation: landscape) {
+    body {
+      overflow-y: auto;
+    }
+  }

@@ -39,7 +39,7 @@ export const Countdown = () => {
     }
 
     return (
-    <div class="countdown"> 
+    <div className="countdown"> 
         <ul>
             <li><span id="days">{showZero(sDay)}{sDay}</span>Jours </li>
             <li><span id="hours">{showZero(sHour)}{sHour}</span>Heures</li>

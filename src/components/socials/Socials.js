@@ -12,7 +12,7 @@ export const Socials = () => {
 
     return(
         <ul className="social-ul">
-                   <li className="social-link"><a href="#" onClick={() => setActive(!active)}>WHATSAPP</a></li>
+                   <li className="social-link"><a href="#" onTouchStart={() => setActive(!active)} onClick={() => setActive(!active)}>WHATSAPP</a></li>
                    <li className="social-link"><a href="https://www.facebook.com/agencesignature/">FACEBOOK</a></li> 
                    <li className="social-link"><a href="#">YOUTUBE</a></li>
 

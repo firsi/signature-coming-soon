@@ -9,6 +9,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 }
 
 header{
@@ -21,13 +22,8 @@ main {
     padding: 4% 5% 0 5%;
     height: 65vh;
     display: flex;
+    justify-content: center;
     position: relative;
-
-    img{
-         max-width: 100%;
-         width: 550px;
-         margin-top: -100px;
-    }
 
     .left-container{
             
@@ -47,12 +43,6 @@ main {
             font-size: 0.8em;
             color: var(--dark-grey)
         }
-    }
-
-    .right-container{
-        position: relative;
-        width: 60vw;
-        text-align: center;
     }
 
     .coming-soon{
@@ -93,6 +83,12 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    @media (orientation: landscape) {
+        body {
+          overflow-y: auto;
+        }
+      }
+
     header{
         .socials{
             display: none;
@@ -115,10 +111,6 @@ footer{
             h1{
                 font-size: 2.3em;
             }
-        }
-
-        .right-container{
-            display: none;
         }
 
         .coming-soon{
@@ -181,16 +173,7 @@ footer{
                 font-size: 2.1em;
             }
         }
-
-        .right-container{
-            width: 30vw;
-        }
     
     }
 }
 
-@media (orientation: landscape) {
-    body {
-      overflow-y: auto;
-    }
-  }
